@@ -48,7 +48,7 @@ Figure 5.1: Kali terminal output showing network interface configuration and suc
 
 ![Nmap Service Scan Output](./screenshots/nmap_service_scan.png)
 
-Figure 5.2: Nmap version scan output displaying open SSH and FTP ports on Marlinspike[cite: 4].
+Figure 5.2: Nmap version scan output displaying open SSH and FTP ports on Marlinspike.
 
 ---
 
@@ -63,7 +63,7 @@ Figure 5.2: Nmap version scan output displaying open SSH and FTP ports on Marlin
 
 ![Custom Password List File](./screenshots/custom_passwords_file.png)
 
-Figure 5.3: Text editor interface showing the custom password dictionary created for the attack[cite: 4].
+Figure 5.3: Command used to create custom password list.
 
 ---
 
@@ -78,7 +78,7 @@ Figure 5.3: Text editor interface showing the custom password dictionary created
 
 ![Hydra Attack Output](./screenshots/hydra_attack_output.png)
 
-Figure 5.4: Hydra terminal output showing the successful recovery of the SSH password `marlinspike`[cite: 5].
+Figure 5.4: Hydra terminal output showing the successful recovery of the SSH password `marlinspike`.
 
 ---
 
