@@ -99,7 +99,9 @@ Figure 2.6: OS and service fingerprinting results for Windows 7.
 
 ## Countermeasures & Mitigation Summary
 
-While Metasploitable 2 and Windows 7 are intentionally vulnerable systems used for learning, similar misconfigurations still appear in real production environments due to legacy software dependency, poor network management, and default installations. The table below summarizes how each finding from this lab can be patched in modern environments:
+While Metasploitable 2 and Windows 7 are intentionally vulnerable systems used for learning, similar misconfigurations still appear in real production environments due to legacy software dependency, poor network management, and default installations. 
+
+The table below summarises how each finding from this lab can be patched in modern environments:
 
 | Lab Finding & Vulnerability | Modern Defense & Countermeasure |
 | :--- | :--- |
@@ -107,4 +109,4 @@ While Metasploitable 2 and Windows 7 are intentionally vulnerable systems used f
 | Cleartext Services (Telnet/TFTP) | Disable Telnet and TFTP; enforce encrypted management alternatives like SSH and SFTP. |
 | Unauthenticated Root Shell (Port 1524) | Terminate unnecessary listening processes and conduct regular internal port audits. |
 | NetBIOS Broadcast Leaks (UDP 137/138) | Disable NetBIOS over TCP/IP and LLMNR across corporate networks via Group Policy (GPO). |
-| Outdated Operating System & Daemons | Implement an automated patch management pipeline and upgrade end-of-life operating systems. |
+| Outdated Operating System & Daemons | Implement an automated patch management and upgrade end-of-life operating systems. |
