@@ -33,6 +33,7 @@ The Nmap flags used during this  exercise are detailed below:
 - **How to Patch**: Enable stateful packet inspection on host firewalls to block malformed TCP flag combinations.
 
 ![Windows 7 Null Scan Result](./screenshots/win7_null_scan.png)
+
 Figure 3.1: Nmap Null scan output on Windows 7 showing all ports reported as closed.
 
 ### b. Metasploitable 2 (192.168.59.135)
@@ -43,6 +44,7 @@ Figure 3.1: Nmap Null scan output on Windows 7 showing all ports reported as clo
 - **How to Patch**: Configure network firewalls to drop TCP packets that contain invalid flag combinations.
 
 ![Metasploitable 2 Null Scan Result](./screenshots/msf_null_scan.png)
+
 Figure 3.2: Nmap Null scan output on Metasploitable 2 displaying open|filtered ports.
 
 ### c. Ubuntu (192.168.59.140)
@@ -53,6 +55,7 @@ Figure 3.2: Nmap Null scan output on Metasploitable 2 displaying open|filtered p
 - **How to Patch**: Keep unused ports closed and enforce host firewall rules using `ufw default deny incoming`.
 
 ![Ubuntu Null Scan Result](./screenshots/ubuntu_null_scan.png)
+
 Figure 3.3: Nmap Null scan output on Ubuntu demonstrating RFC compliant closed port responses.
 
 ---
@@ -67,6 +70,7 @@ Figure 3.3: Nmap Null scan output on Ubuntu demonstrating RFC compliant closed p
 - **How to Patch**: Use modern Windows Defender Firewall rules to drop out-of-state TCP FIN packets.
 
 ![Windows 7 FIN Scan Result](./screenshots/win7_fin_scan.png)
+
 Figure 3.4: Nmap FIN scan output on Windows 7 displaying closed port results.
 
 ### b. Metasploitable 2 (192.168.59.135)
@@ -77,6 +81,7 @@ Figure 3.4: Nmap FIN scan output on Windows 7 displaying closed port results.
 - **How to Patch**: Deploy intrusion prevention system (IPS) signatures to flag and drop standalone FIN packets.
 
 ![Metasploitable 2 FIN Scan Result](./screenshots/msf_fin_scan.png)
+
 Figure 3.5: Nmap FIN scan output on Metasploitable 2 showing open|filtered status.
 
 ### c. Ubuntu (192.168.59.140)
@@ -87,6 +92,7 @@ Figure 3.5: Nmap FIN scan output on Metasploitable 2 showing open|filtered statu
 - **How to Patch**: Implement IPTables rules to log and drop non-SYN packets initiating connections.
 
 ![Ubuntu FIN Scan Result](./screenshots/ubuntu_fin_scan.png)
+
 Figure 3.6: Nmap FIN scan output on Ubuntu confirming closed port behavior.
 
 ---
