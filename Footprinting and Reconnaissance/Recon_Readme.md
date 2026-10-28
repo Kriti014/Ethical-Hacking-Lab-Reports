@@ -1,4 +1,4 @@
-# Week 2 Lab Report: Footprinting and Reconnaissance
+# Footprinting and Reconnaissance
 
 ## Overview
 This laboratory exercise covers active network reconnaissance and target footprinting using Nmap. 
