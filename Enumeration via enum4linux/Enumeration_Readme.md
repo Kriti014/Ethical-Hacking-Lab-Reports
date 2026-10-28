@@ -1,10 +1,10 @@
-# SMB and NetBIOS Enumeration via enum4linux
+# Week 4 Lab Report: SMB and NetBIOS Enumeration via enum4linux
 
 ## Overview
-This lab covers automated SMB and NetBIOS enumeration using `enum4linux` across three distinct operating system targets (Metasploitable 2, Windows 7, and Ubuntu).
+This laboratory exercise covers automated SMB and NetBIOS enumeration using `enum4linux` across three distinct operating system targets (Metasploitable 2, Windows 7, and Ubuntu).
 
 ## Definition
-Enumeration heret refers to the active phase of gathering detailed system information—such as user accounts, shared network directories, domain structures, and password policies—by querying open service ports like Server Message Block (SMB) and NetBIOS.
+Enumeration in this lab context refers to the active phase of gathering detailed system information—such as user accounts, shared network directories, domain structures, and password policies—by querying open service ports like Server Message Block (SMB) and NetBIOS.
 
 ---
 
@@ -28,15 +28,14 @@ The enumeration command and flags used during this laboratory exercise are detai
 - **How Attackers Use This**: Attackers leverage anonymous null sessions to harvest user account lists via Relative Identifier (RID) cycling and inspect readable shares for sensitive file disclosures or malicious payload drops.
 - **How to Patch**: Upgrade Samba to a supported secure release and disable anonymous null session guest access in `smb.conf`.
 
-![Metasploitable Enum Result 1](./screenshots/msf_enum_1.png)
-![Metasploitable Enum Result 2](./screenshots/msf_enum_2.png)
-![Metasploitable Enum Result 3](./screenshots/msf_enum_3.png)
-![Metasploitable Enum Result 4](./screenshots/msf_enum_4.png)
-![Metasploitable Enum Result 5](./screenshots/msf_enum_5.png)
-![Metasploitable Enum Result 6](./screenshots/msf_enum_6.png)
-![Metasploitable Enum Result 7](./screenshots/msf_enum_7.png)
-![Metasploitable Enum Result 8](./screenshots/msf_enum_8.png)
-
+![Metasploitable Enum Result 1](./screenshots/Metasploitable%20Enum%20Result%201.png)
+![Metasploitable Enum Result 2](./screenshots/Metasploitable%20Enum%20Result%202.png)
+![Metasploitable Enum Result 3](./screenshots/Metasploitable%20Enum%20Result%203.png)
+![Metasploitable Enum Result 4](./screenshots/Metasploitable%20Enum%20Result%204.png)
+![Metasploitable Enum Result 5](./screenshots/Metasploitable%20Enum%20Result%205.png)
+![Metasploitable Enum Result 6](./screenshots/Metasploitable%20Enum%20Result%206.png)
+![Metasploitable Enum Result 7](./screenshots/Metasploitable%20Enum%20Result%207.png)
+![Metasploitable Enum Result 8](./screenshots/Metasploitable%20Enum%20Result%208.png)
 Figure 4.1: `enum4linux` output showing null session access, Samba version, user accounts, and share mappings on Metasploitable 2.
 
 ---
@@ -53,7 +52,6 @@ Figure 4.1: `enum4linux` output showing null session access, Samba version, user
 ![Windows 7 Enum Result 1](./screenshots/win7_enum_1.png)
 ![Windows 7 Enum Result 2](./screenshots/win7_enum_2.png)
 ![Windows 7 Enum Result 3](./screenshots/win7_enum_3.png)
-
 Figure 4.2: `enum4linux` execution against Windows 7 showing blocked RPC queries and access denied responses.
 
 ---
@@ -68,7 +66,6 @@ Figure 4.2: `enum4linux` execution against Windows 7 showing blocked RPC queries
 - **How to Patch**: Keep unnecessary file-sharing services disabled on Linux servers unless explicitly required for network operations.
 
 ![Ubuntu Enum Result](./screenshots/ubuntu_enum_1.png)
-
 Figure 4.3: `enum4linux` execution against Ubuntu demonstrating complete scan abortion due to inactive SMB ports.
 
 ---
