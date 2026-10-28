@@ -32,7 +32,7 @@ The Nmap flags used during this  exercise are detailed below:
 - **How Attackers Use This**: Attackers run Null scans to attempt bypassing stateless firewalls, though on Windows systems this produces a false negative result masking live services.
 - **How to Patch**: Enable stateful packet inspection on host firewalls to block malformed TCP flag combinations.
 
-![Windows 7 Null Scan Result](./screenshots/win7_null_scan.png)
+![Windows 7 Null Scan Result](./Screenshots/win7_null_scan.png)
 
 Figure 3.1: Nmap Null scan output on Windows 7 showing all ports reported as closed.
 
@@ -43,7 +43,7 @@ Figure 3.1: Nmap Null scan output on Windows 7 showing all ports reported as clo
 - **How Attackers Use This**: Attackers exploit this behavior to identify open listening services without generating log entries associated with standard TCP handshakes.
 - **How to Patch**: Configure network firewalls to drop TCP packets that contain invalid flag combinations.
 
-![Metasploitable 2 Null Scan Result](./screenshots/msf_null_scan.png)
+![Metasploitable 2 Null Scan Result](./Screenshots/msf_null_scan.png)
 
 Figure 3.2: Nmap Null scan output on Metasploitable 2 displaying open|filtered ports.
 
@@ -54,7 +54,7 @@ Figure 3.2: Nmap Null scan output on Metasploitable 2 displaying open|filtered p
 - **How Attackers Use This**: Attackers determine that no services are listening on these tested ports without completing TCP handshakes.
 - **How to Patch**: Keep unused ports closed and enforce host firewall rules using `ufw default deny incoming`.
 
-![Ubuntu Null Scan Result](./screenshots/ubuntu_null_scan.png)
+![Ubuntu Null Scan Result](./Screenshots/ubuntu_null_scan.png)
 
 Figure 3.3: Nmap Null scan output on Ubuntu demonstrating RFC compliant closed port responses.
 
@@ -69,7 +69,7 @@ Figure 3.3: Nmap Null scan output on Ubuntu demonstrating RFC compliant closed p
 - **How Attackers Use This**: Attackers observe this behavior to perform OS fingerprinting, identifying the OS stack as Microsoft Windows due to non-compliant RST generation.
 - **How to Patch**: Use modern Windows Defender Firewall rules to drop out-of-state TCP FIN packets.
 
-![Windows 7 FIN Scan Result](./screenshots/win7_fin_scan.png)
+![Windows 7 FIN Scan Result](./Screenshots/win7_fin_scan.png)
 
 Figure 3.4: Nmap FIN scan output on Windows 7 displaying closed port results.
 
@@ -80,7 +80,7 @@ Figure 3.4: Nmap FIN scan output on Windows 7 displaying closed port results.
 - **How Attackers Use This**: Attackers differentiate open services from closed ports quietly without opening formal TCP sessions.
 - **How to Patch**: Deploy intrusion prevention system (IPS) signatures to flag and drop standalone FIN packets.
 
-![Metasploitable 2 FIN Scan Result](./screenshots/msf_fin_scan.png)
+![Metasploitable 2 FIN Scan Result](./Screenshots/msf_fin_scan.png)
 
 Figure 3.5: Nmap FIN scan output on Metasploitable 2 showing open|filtered status.
 
@@ -91,7 +91,7 @@ Figure 3.5: Nmap FIN scan output on Metasploitable 2 showing open|filtered statu
 - **How Attackers Use This**: Attackers verify that no active services are exposed on these ports without full connection logging.
 - **How to Patch**: Implement IPTables rules to log and drop non-SYN packets initiating connections.
 
-![Ubuntu FIN Scan Result](./screenshots/ubuntu_fin_scan.png)
+![Ubuntu FIN Scan Result](./Screenshots/ubuntu_fin_scan.png)
 
 Figure 3.6: Nmap FIN scan output on Ubuntu confirming closed port behavior.
 
