@@ -19,3 +19,11 @@ All testing was executed within an isolated VMware virtual network subnet (192.1
 | Metasploitable 2 | Vulnerable Target (Linux 2.6.x) | 192.168.59.135 |
 | Windows 7 | Vulnerable Target (Win 7 / Server 2008 R2) | 192.168.59.138 |
 
+## Roadmap 
+1. [Week1 -Footprinting and Reconnaissance](./Week1%20-Footprinting%20and%20Reconnaissance/Recon_Readme.md) 
+
+2. [Week2 -Enumeration via enum4linux](./Enumeration%20via%20enum4linux/02.%20Enumeration_Readme)
+
+3. [Week3 -Advance Scan using SN and FN](./Advance%20Scan%20(SN%20and%20FN)_Readme)
+
+4. [Week4 -System Access using Hydra](./System%20Access%20(Hydra)/04.%20Hydra_Readme.md)
